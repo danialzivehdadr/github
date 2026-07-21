@@ -1,0 +1,10 @@
+name: AbandonedRepo
+description: The policy to archive old repositories.
+owner: 
+resource: repository
+where: 
+configuration:
+  abandonedRepoPrimitive:
+    isEnabled: true
+    # 18 months
+    notUsedDays: 540
