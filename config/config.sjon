@@ -1,0 +1,17 @@
+{
+  "owner_name": "Danial Zivehdar",
+  "owner_email": "danialzivehdar1992@gmail.com",
+  "github_token": "",
+  "repo_owner": "",
+  "repo_name": "",
+  "telegram_token": "",
+  "telegram_chat_id": "",
+  "interval": 300,
+  "alert_channels": ["telegram", "log"],
+  "suspicious_patterns": [
+    "repo.access",
+    "repo.destroy",
+    "protected_branch.force_push",
+    "member.remove"
+  ]
+}
