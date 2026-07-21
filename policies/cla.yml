@@ -1,0 +1,43 @@
+name: Contributor License Agreement Policy
+description: CLA policy file
+
+resource: repository
+where:
+- |
+  repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("b", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("c", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("d", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("e", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("f", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("g", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("h", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("i", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("j", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("k", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("l", StringComparison.InvariantCultureIgnoreCase)
+configuration: 
+   claPrimitive:
+      claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
+      minimalChangeRequired: 
+         files: 2
+         codeLines: 16
+      bypassOrgs:
+         - bloomberg
+      bypassUsers:
+         - dependabot[bot]
+         - greenkeeper[bot]
+         - dotnet-maestro[bot]
+         - dependabot-preview[bot]
+         - openapi-sdkautomation[bot]
+         - github-actions[bot]
+         - content-assistant[bot]
+         - reunion-maestro[bot]
+         - renovate[bot]
+         - microsoft-github-policy-service[bot]
+         - msftbot[bot]
+         - azure-pipelines[bot]
+      prohibitedCompanies:
+         - msft
+      autoSignMsftEmployee: true
