@@ -1,0 +1,14 @@
+name: Fabric Bot
+description: Description
+
+resource: repository
+where:
+- |
+  repository.name.equals("WinAppPerf", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase) 
+
+configuration:
+  activateFabricBot:
+    activate: true
