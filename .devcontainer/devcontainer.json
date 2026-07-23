@@ -1,4 +1,32 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": true,
+      "installGradle": false
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "github.copilot"
+      ],
+      "settings": {
+        "java.jdt.ls.java.home": "/usr/lib/jvm/msopenjdk-current",
+        "editor.fontSize": 14,
+        "editor.tabSize": 4
+      }
+    }
+  },
+  "postCreateCommand": "java --version",
+  "remoteUser": "vscode"
 }
