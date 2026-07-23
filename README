@@ -1,0 +1,18 @@
+# RepoLedger
+
+Repository Ownership History & Access Control System.
+
+## Owner
+- **Name:** Danial Zivehdar
+- **Email:** danialzivehdar1992@gmail.com
+
+## Features
+- Linear ownership history tracking
+- Secure direct link (owner-only access)
+- Token-based authentication
+- Auto-expiry (24 hours)
+
+## Usage
+```bash
+javac RepoOwnerAccess.java
+java RepoOwnerAccess
